@@ -9,10 +9,8 @@ export default function SuccessStories() {
       branch: "Chemical Engineering",
       company: "Lubrizol",
       position: "Process Engineer",
-      before: "❌ No confidence in interviews",
-      after: "✅ Selected at Lubrizol",
-      image: "https://via.placeholder.com/200x200?text=Aditya",
-      companyLogo: "https://via.placeholder.com/100x50?text=Lubrizol"
+      before: "No confidence in interviews",
+      after: "Selected at Lubrizol",
     },
     {
       id: 2,
@@ -20,10 +18,8 @@ export default function SuccessStories() {
       branch: "Chemical Engineering",
       company: "Thermax",
       position: "Production Engineer",
-      before: "❌ Weak technical knowledge",
-      after: "✅ Cleared 3 rounds at Thermax",
-      image: "https://via.placeholder.com/200x200?text=Priya",
-      companyLogo: "https://via.placeholder.com/100x50?text=Thermax"
+      before: "Weak technical knowledge",
+      after: "Cleared 3 rounds at Thermax",
     },
     {
       id: 3,
@@ -31,10 +27,8 @@ export default function SuccessStories() {
       branch: "Chemical Engineering",
       company: "Reliance",
       position: "Senior Process Engineer",
-      before: "❌ Failed 5 interviews before",
-      after: "✅ Got 15 LPA offer at Reliance",
-      image: "https://via.placeholder.com/200x200?text=Rohit",
-      companyLogo: "https://via.placeholder.com/100x50?text=Reliance"
+      before: "Failed 5 interviews before",
+      after: "Got 15 LPA offer at Reliance",
     },
     {
       id: 4,
@@ -42,10 +36,8 @@ export default function SuccessStories() {
       branch: "Chemical Engineering",
       company: "Worley",
       position: "Design Engineer",
-      before: "❌ Poor communication skills",
-      after: "✅ Promoted within 6 months at Worley",
-      image: "https://via.placeholder.com/200x200?text=Sneha",
-      companyLogo: "https://via.placeholder.com/100x50?text=Worley"
+      before: "Poor communication skills",
+      after: "Promoted within 6 months at Worley",
     },
   ];
 
@@ -71,23 +63,6 @@ export default function SuccessStories() {
               className="feature-card bg-brand-card border border-brand-red border-opacity-30 overflow-hidden animate-in hover:border-brand-red hover:border-opacity-100 hover:shadow-xl hover:shadow-red-500/20 hover:scale-105 transition-all duration-300"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              {/* Student Image */}
-              <div className="relative h-48 lg:h-56 2xl:h-64 bg-gradient-to-b from-brand-blue to-brand-red overflow-hidden">
-                <img
-                  src={story.image}
-                  alt={story.name}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                />
-                {/* Company Logo Badge */}
-                <div className="absolute top-2 right-2 bg-brand-black bg-opacity-80 p-2 lg:p-3 2xl:p-4 rounded-lg shadow-lg">
-                  <img
-                    src={story.companyLogo}
-                    alt={story.company}
-                    className="h-8 lg:h-10 2xl:h-12 w-auto"
-                  />
-                </div>
-              </div>
-
               {/* Content */}
               <div className="p-6 lg:p-7 2xl:p-8">
                 {/* Student Info */}
@@ -103,23 +78,18 @@ export default function SuccessStories() {
 
                 {/* Before/After */}
                 <div className="space-y-3 lg:space-y-4 2xl:space-y-5 mb-5 lg:mb-6 2xl:mb-7">
-                  <div className="flex items-start gap-2 lg:gap-3 2xl:gap-4 text-sm lg:text-base 2xl:text-lg">
-                    <span className="text-brand-red font-bold flex-shrink-0">❌</span>
+                  <div className="text-sm lg:text-base 2xl:text-lg">
+                    <span className="text-brand-red font-bold block mb-1">Before:</span>
                     <span className="text-brand-white text-opacity-70">
                       {story.before}
                     </span>
                   </div>
-                  <div className="flex items-start gap-2 lg:gap-3 2xl:gap-4 text-sm lg:text-base 2xl:text-lg">
-                    <span className="text-brand-yellow font-bold flex-shrink-0">✅</span>
+                  <div className="text-sm lg:text-base 2xl:text-lg">
+                    <span className="text-brand-yellow font-bold block mb-1">After:</span>
                     <span className="text-brand-white font-semibold">
                       {story.after}
                     </span>
                   </div>
-                </div>
-
-                {/* Rating */}
-                <div className="flex items-center gap-1 text-brand-yellow text-sm lg:text-base 2xl:text-lg">
-                  ⭐⭐⭐⭐⭐ <span className="text-brand-white ml-2">Recommended</span>
                 </div>
               </div>
             </div>

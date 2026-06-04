@@ -78,17 +78,9 @@ export default function TestimonialSection() {
 
         {/* Testimonials Carousel */}
         <div className="max-w-4xl mx-auto mb-20">
-          <div className="feature-card relative h-96 flex items-center justify-center">
+          <div className="feature-card relative p-8 text-center">
             {/* Testimonial */}
-            <div className="text-center px-8 animate-fade-in">
-              <div className="flex justify-center gap-1 mb-6">
-                {[...Array(testimonials[currentTestimonial].rating)].map(
-                  (_, i) => (
-                    <FaStar key={i} className="text-brand-yellow" />
-                  ),
-                )}
-              </div>
-
+            <div className="animate-fade-in">
               <p className="text-2xl font-bold text-brand-white mb-6 italic">
                 "{testimonials[currentTestimonial].quote}"
               </p>
@@ -116,7 +108,7 @@ export default function TestimonialSection() {
             </button>
 
             {/* Indicators */}
-            <div className="absolute bottom-4 flex gap-2">
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
               {testimonials.map((_, index) => (
                 <button
                   key={index}
@@ -136,29 +128,21 @@ export default function TestimonialSection() {
         <div className="mb-20 animate-in">
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold mb-2">
-              ✓ Verified Student Feedback
+              Student Feedback
             </h3>
             <p className="text-brand-white text-opacity-60">
               Authentic testimonials from our community
             </p>
           </div>
 
-          {/* WhatsApp Screenshot Area - Placeholder */}
+          {/* Feedback Cards */}
           <div className="max-w-2xl mx-auto">
             <div className="glass-effect p-8 text-center border border-brand-blue border-opacity-20">
               <div className="bg-brand-card rounded-lg p-8 mb-4">
-                <p className="text-sm font-bold text-brand-blue mb-4">
-                  [WhatsApp Group Screenshots Area]
+                <p className="text-brand-white mb-4">
+                  "The guidance was exceptional. I went from nervous to confident in just weeks."
                 </p>
-                <p className="text-brand-white text-opacity-70">
-                  Verified testimonials from our WhatsApp community
-                </p>
-                <div className="mt-6 p-4 bg-brand-yellow bg-opacity-10 border border-brand-yellow border-opacity-20 rounded-lg">
-                  <p className="text-sm text-brand-yellow">
-                    Note: Upload WhatsApp screenshot at /WhatsApp_Screenshot.png
-                    to display verified feedback
-                  </p>
-                </div>
+                <p className="text-sm text-brand-blue">- Rahul M., Placed at TCS</p>
               </div>
               <a
                 href="https://chat.whatsapp.com/KkCyg76GqpXIvoKIktmk3Q"

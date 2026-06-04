@@ -1,91 +1,95 @@
-
-import relianceLogo from "../assets/logos/reliance.jpeg";
-import thermaxLogo from "../assets/logos/thermax.jpeg";
-import lubrizolLogo from "../assets/logos/lubrizol.jpeg";
-import worleyLogo from "../assets/logos/worley.jpeg";
-import uplLogo from "../assets/logos/upl.jpeg";
-import aartiLogo from "../assets/logos/aarti.jpeg";
-import tatLogo from "../assets/logos/tata-chemicals.jpeg";
-
 export default function About() {
-  const companies = [
-    { name: "Reliance", logo: relianceLogo },
-    { name: "Thermax", logo: thermaxLogo },
-    { name: "Lubrizol", logo: lubrizolLogo },
-    { name: "Worley", logo: worleyLogo },
-    { name: "UPL", logo: uplLogo },
-    { name: "Aarti Industries", logo: aartiLogo },
-    { name: "Tata Chemicals", logo: tatLogo },
-  ];
-
-  const features = [
+  const aboutPoints = [
     {
-      title: "Interview Gap",
-      description: "Students excel technically but lack interview confidence and communication skills.",
+      title: "Born from a Gap",
+      description:
+        "We noticed engineering students had the technical knowledge but lacked interview readiness, communication skills, and structured placement guidance.",
+      icon: "💡",
     },
     {
-      title: "No Mentorship",
-      description: "No real guidance on how to approach interviews and placement strategies.",
+      title: "Student-Driven",
+      description:
+        "Placement Spark is built by people who've been through the placement grind. Every module is designed with the student's real challenges in mind.",
+      icon: "👥",
     },
     {
-      title: "Unstructured Prep",
-      description: "No clear roadmap. Students waste time on irrelevant preparation.",
+      title: "Structured & Scalable",
+      description:
+        "Starting with Chemical Engineering and expanding to all branches — our goal is to democratize placement preparation across every campus.",
+      icon: "📈",
     },
   ];
 
   return (
-    <section id="about" className="py-20 md:py-32 lg:py-40 2xl:py-48 bg-brand-white">
+    <section
+      id="about"
+      className="py-20 md:py-32 lg:py-40 2xl:py-48 bg-brand-white"
+    >
       <div className="container-custom">
-        {/* Header */}
-        <div className="text-center mb-20 lg:mb-24 2xl:mb-32 animate-in">
-          <h2 className="heading-section text-brand-black mb-4 lg:mb-6 2xl:mb-8">
-            Why Placement Spark?
-          </h2>
-          <p className="subheading text-brand-black text-opacity-70 max-w-3xl lg:max-w-4xl 2xl:max-w-5xl mx-auto">
-            Bridge the gap between college knowledge and corporate readiness with structured preparation and real mentorship.
-          </p>
+        {/* About Us Badge */}
+        <div className="flex justify-center mb-8 lg:mb-10 2xl:mb-12">
+          <div className="inline-flex items-center gap-2 bg-brand-red text-white px-6 py-2 rounded-full text-sm lg:text-base 2xl:text-lg font-bold">
+            About Us
+          </div>
         </div>
 
-        {/* Problems & Solutions */}
-        <div className="grid md:grid-cols-3 gap-6 lg:gap-8 2xl:gap-10 mb-24 lg:mb-32 2xl:mb-40">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="feature-card bg-brand-card border-2 border-brand-red border-opacity-30 hover:border-opacity-60 hover:shadow-lg hover:shadow-red-500/20 animate-in p-6 lg:p-8 2xl:p-10 transition-all duration-300 hover:-translate-y-2"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <h3 className="text-lg lg:text-xl 2xl:text-2xl font-bold text-brand-white mb-3 lg:mb-4 2xl:mb-5">
-                {feature.title}
-              </h3>
-              <p className="text-brand-white text-opacity-80 text-sm lg:text-base 2xl:text-lg leading-relaxed">
-                {feature.description}
-              </p>
+        {/* Main Title */}
+        <h2 className="text-center heading-section text-brand-red mb-8 lg:mb-10 2xl:mb-12">
+          What is Placement Spark?
+        </h2>
+
+        {/* Subtitle */}
+        <p className="text-center text-brand-black text-opacity-70 max-w-3xl lg:max-w-4xl 2xl:max-w-5xl mx-auto mb-16 lg:mb-20 2xl:mb-24 text-base lg:text-lg 2xl:text-xl">
+          A structured, student-focused placement preparation initiative that
+          bridges the gap between classroom learning and corporate interview
+          rooms.
+        </p>
+
+        {/* Two Column Layout */}
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 2xl:gap-16 items-center mb-16 lg:mb-20 2xl:mb-24">
+          {/* Left - Image */}
+          <div className="relative rounded-2xl lg:rounded-3xl overflow-hidden">
+            <img
+              src="/Interview_Success_rate.png"
+              alt="Interview Success Rate"
+              className="w-full h-auto object-cover rounded-2xl lg:rounded-3xl shadow-2xl"
+            />
+          </div>
+
+          {/* Right - Content */}
+          <div>
+            <p className="text-brand-black text-opacity-80 mb-8 lg:mb-10 2xl:mb-12 text-base lg:text-lg 2xl:text-xl leading-relaxed">
+              Most engineering students step into placement season unsure of
+              what to expect. They have the skills, but lack a roadmap.
+              Placement Spark changes that — through mock interviews,
+              communication training, resume building, and mentorship, we
+              prepare students to show up confident and ready.
+            </p>
+
+            {/* Feature Points */}
+            <div className="space-y-4 lg:space-y-5 2xl:space-y-6">
+              {aboutPoints.map((point, idx) => (
+                <div key={idx} className="flex gap-4 lg:gap-5 2xl:gap-6">
+                  {/* Icon */}
+                  <div className="flex-shrink-0 w-12 h-12 lg:w-14 lg:h-14 2xl:w-16 2xl:h-16 bg-red-100 rounded-full flex items-center justify-center text-2xl lg:text-3xl 2xl:text-4xl">
+                    {point.icon}
+                  </div>
+
+                  {/* Content */}
+                  <div className="flex-1 pt-1">
+                    <h3 className="text-lg lg:text-xl 2xl:text-2xl font-bold text-brand-black mb-2 lg:mb-3">
+                      {point.title}
+                    </h3>
+                    <p className="text-brand-black text-opacity-70 text-sm lg:text-base 2xl:text-lg leading-relaxed">
+                      {point.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-
-        {/* Companies Section */}
-        <div className="border-t border-brand-black border-opacity-10 pt-20 lg:pt-24 2xl:pt-32">
-          <h3 className="text-center text-brand-black font-bold mb-10 lg:mb-12 2xl:mb-16 text-xl lg:text-2xl 2xl:text-3xl">
-            Students Interviewed At
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 lg:gap-6 2xl:gap-8">
-            {companies.map((company, index) => (
-              <div
-                key={index}
-                className="flex items-center justify-center p-4 lg:p-6 2xl:p-8 bg-brand-black bg-opacity-5 rounded-xl lg:rounded-2xl border-2 border-brand-black border-opacity-10 hover:border-brand-blue hover:border-opacity-50 hover:shadow-lg hover:shadow-blue-500/20 hover:bg-opacity-10 transition-all duration-300 group overflow-hidden"
-              >
-                <img
-                  src={company.logo}
-                  alt={company.name}
-                  className="h-10 lg:h-12 2xl:h-14 w-auto object-contain group-hover:scale-125 transition-transform duration-300 filter group-hover:grayscale-0 grayscale"
-                />
-              </div>
-            ))}
           </div>
         </div>
       </div>
     </section>
   );
 }
-

@@ -1,0 +1,620 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+* {
+  @apply font-inter;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-brand-black text-brand-white font-inter;
+  min-height: 100vh;
+}
+
+/* Utility classes - FORCE FULL WIDTH */
+.container-custom {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  box-sizing: border-box;
+}
+
+/* Premium desktop container - full width */
+.container-premium {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  .container-custom {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .container-premium {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.btn-primary {
+  @apply bg-brand-blue hover:bg-blue-600 text-brand-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 inline-block transform hover:scale-105 hover:shadow-lg hover:shadow-brand-blue/50;
+}
+
+@media (min-width: 1536px) {
+  .btn-primary {
+    @apply py-4 px-10 text-lg;
+  }
+}
+
+.btn-secondary {
+  @apply bg-brand-yellow hover:bg-yellow-300 text-brand-black font-semibold py-3 px-8 rounded-lg transition-all duration-300 inline-block transform hover:scale-105 hover:shadow-lg hover:shadow-brand-yellow/50;
+}
+
+@media (min-width: 1536px) {
+  .btn-secondary {
+    @apply py-4 px-10 text-lg;
+  }
+}
+
+.btn-red {
+  @apply bg-brand-red hover:bg-red-500 text-brand-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 inline-block transform hover:scale-105 hover:shadow-lg hover:shadow-brand-red/50;
+}
+
+@media (min-width: 1536px) {
+  .btn-red {
+    @apply py-4 px-10 text-lg;
+  }
+}
+
+.btn-outline {
+  @apply border-2 border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-brand-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 inline-block hover:shadow-lg hover:shadow-brand-blue/50;
+}
+
+@media (min-width: 1536px) {
+  .btn-outline {
+    @apply py-4 px-10 text-lg border-2;
+  }
+}
+
+.heading-hero {
+  @apply text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight;
+}
+
+/* Larger hero heading for desktop - premium feel */
+@media (min-width: 1280px) {
+  .heading-hero {
+    @apply text-7xl font-bold leading-tight;
+    letter-spacing: -0.015em;
+    line-height: 1.1;
+  }
+}
+
+@media (min-width: 1536px) {
+  .heading-hero {
+    @apply text-8xl font-bold leading-tight;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+  }
+}
+
+@media (min-width: 1920px) {
+  .heading-hero {
+    font-size: 5rem;
+    letter-spacing: -0.025em;
+    line-height: 1;
+  }
+}
+
+.heading-section {
+  @apply text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight;
+}
+
+/* Larger section heading for desktop */
+@media (min-width: 1280px) {
+  .heading-section {
+    @apply text-6xl font-bold leading-tight;
+  }
+}
+
+@media (min-width: 1536px) {
+  .heading-section {
+    @apply text-7xl font-bold leading-tight;
+  }
+}
+
+@media (min-width: 1920px) {
+  .heading-section {
+    font-size: 4.5rem;
+    font-weight: 700;
+  }
+}
+
+.subheading {
+  @apply text-xl sm:text-2xl font-semibold;
+}
+
+/* Larger subheading for desktop */
+@media (min-width: 1536px) {
+  .subheading {
+    @apply text-3xl font-semibold;
+  }
+}
+
+/* Desktop-specific spacing utilities */
+@media (min-width: 1536px) {
+  .gap-desktop-lg {
+    gap: 3rem;
+  }
+  
+  .py-desktop-lg {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  .p-desktop-lg {
+    padding: 3rem;
+  }
+  
+  /* Increase general section spacing on desktop */
+  section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.glass-effect {
+  @apply bg-white bg-opacity-5 backdrop-blur-lg border border-white border-opacity-10 rounded-xl;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-brand-red to-brand-blue bg-clip-text text-transparent;
+}
+
+.stats-card {
+  @apply bg-brand-card rounded-xl p-6 sm:p-8 border border-brand-red border-opacity-20 hover:border-opacity-40 transition-all duration-300 hover:shadow-lg hover:shadow-brand-red/30 hover:-translate-y-1;
+}
+
+.feature-card {
+  @apply bg-brand-card rounded-xl p-6 sm:p-8 border border-brand-blue border-opacity-10 hover:border-opacity-30 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20 hover:-translate-y-1;
+}
+
+/* Premium gradient cards for new sections */
+.premium-card {
+  @apply bg-gradient-to-br from-brand-card via-brand-card to-brand-black rounded-2xl lg:rounded-3xl border-2 border-brand-white border-opacity-10 hover:border-brand-blue hover:border-opacity-40 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/30 hover:-translate-y-2;
+}
+
+/* Section transitions */
+.section-transition {
+  @apply transition-all duration-500 ease-out;
+}
+
+.nav-link {
+  @apply text-brand-white hover:text-brand-red transition-colors duration-300 font-medium;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes ctaPulseGlow {
+  0% {
+    transform: scale(1);
+    box-shadow: 
+      0 0 0 0 rgba(59, 130, 246, 0.2),
+      0 0 20px rgba(59, 130, 246, 0.25),
+      inset 0 0 15px rgba(59, 130, 246, 0.08);
+  }
+  25% {
+    transform: scale(1);
+    box-shadow: 
+      0 0 0 0 rgba(59, 130, 246, 0.2),
+      0 0 20px rgba(59, 130, 246, 0.25),
+      inset 0 0 15px rgba(59, 130, 246, 0.08);
+  }
+  50% {
+    transform: scale(1.04);
+    box-shadow: 
+      0 0 0 8px rgba(59, 130, 246, 0),
+      0 0 35px rgba(59, 130, 246, 0.4),
+      inset 0 0 20px rgba(59, 130, 246, 0.15);
+  }
+  75% {
+    transform: scale(1);
+    box-shadow: 
+      0 0 0 0 rgba(59, 130, 246, 0.2),
+      0 0 20px rgba(59, 130, 246, 0.25),
+      inset 0 0 15px rgba(59, 130, 246, 0.08);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 
+      0 0 0 0 rgba(59, 130, 246, 0.2),
+      0 0 20px rgba(59, 130, 246, 0.25),
+      inset 0 0 15px rgba(59, 130, 246, 0.08);
+  }
+}
+
+.animate-in {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.btn-primary-cta {
+  @apply bg-brand-blue text-brand-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 inline-block;
+  animation: ctaPulseGlow 4.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.25), inset 0 0 15px rgba(59, 130, 246, 0.08);
+}
+
+@media (min-width: 1536px) {
+  .btn-primary-cta {
+    @apply py-4 px-10 text-lg;
+  }
+}
+
+.btn-primary-cta:hover {
+  @apply hover:shadow-lg;
+  animation: ctaPulseGlow 4.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+.stagger-1 {
+  animation-delay: 0.1s;
+}
+.stagger-2 {
+  animation-delay: 0.2s;
+}
+.stagger-3 {
+  animation-delay: 0.3s;
+}
+.stagger-4 {
+  animation-delay: 0.4s;
+}
+.stagger-5 {
+  animation-delay: 0.5s;
+}
+
+/* Form Dropdown Styling */
+.form-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%233b82f6' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 40px;
+  line-height: 1.5;
+}
+
+.form-select option {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 12px;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* Mobile dropdown text sizing */
+@media (max-width: 768px) {
+  .form-select {
+    font-size: 18px;
+    padding: 14px 40px 14px 16px;
+  }
+
+  .form-select option {
+    font-size: 18px;
+    padding: 14px;
+  }
+}
+
+/* Desktop dropdown text sizing */
+@media (min-width: 769px) {
+  .form-select {
+    font-size: 18px;
+    padding: 12px 40px 12px 16px;
+  }
+
+  .form-select option {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+/* ============ ULTRA-WIDE DESKTOP OPTIMIZATION ============ */
+/* For screens 1920px and above */
+
+@media (min-width: 1920px) {
+  .container-custom {
+    max-width: 1600px !important;
+    padding-left: 48px !important;
+    padding-right: 48px !important;
+  }
+
+  /* Premium section spacing */
+  section {
+    padding-left: 48px !important;
+    padding-right: 48px !important;
+  }
+
+  /* Hero section optimizations */
+  .heading-hero {
+    letter-spacing: -0.03em;
+  }
+
+  /* Better spacing for cards */
+  .stats-card,
+  .feature-card {
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+}
+
+/* ============ CONVERSION OPTIMIZATION ============ */
+
+/* Hover animations on cards */
+.stats-card {
+  @apply transition-all duration-300 ease-out;
+}
+
+.stats-card:hover {
+  @apply scale-105 shadow-2xl;
+  box-shadow: 0 20px 40px rgba(239, 68, 68, 0.2);
+}
+
+.feature-card {
+  @apply transition-all duration-300 ease-out;
+}
+
+.feature-card:hover {
+  @apply scale-105 shadow-xl;
+}
+
+/* Enhanced button hover effects */
+.btn-primary,
+.btn-secondary,
+.btn-red,
+.btn-outline,
+.btn-primary-cta {
+  @apply transition-all duration-300;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-red:hover {
+  @apply scale-110;
+}
+
+.btn-outline:hover {
+  @apply scale-110;
+}
+
+/* Smooth section transitions */
+@keyframes sectionFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-animate {
+  animation: sectionFadeInUp 0.8s ease-out forwards;
+}
+
+/* Card entrance animations */
+@keyframes cardSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.card-animate {
+  animation: cardSlideIn 0.5s ease-out forwards;
+}
+
+/* Testimonial scale effect */
+.testimonial-card {
+  @apply transition-transform duration-300;
+}
+
+.testimonial-card:hover {
+  @apply scale-105;
+}
+
+/* Badge hover effect */
+.badge-item {
+  @apply transition-all duration-300;
+}
+
+.badge-item:hover {
+  @apply scale-105 shadow-lg;
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.15);
+}
+
+/* Premium spacing utilities */
+@media (min-width: 1536px) {
+  /* Increased spacing between major sections */
+  section {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+  }
+
+  /* Better gap between grid items */
+  .gap-desktop-xl {
+    gap: 4rem;
+  }
+
+  /* Premium padding for containers */
+  .px-desktop-xl {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  @apply transition-colors duration-200;
+}
+
+button,
+a,
+input,
+textarea,
+select {
+  @apply transition-all duration-300;
+}
+
+/* Enhanced focus states for accessibility */
+button:focus,
+a:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  @apply outline-none ring-2 ring-brand-blue ring-offset-2;
+  ring-offset-color: rgb(5, 5, 5);
+}
+
+/* Tooltip animation */
+@keyframes tooltipSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tooltip-animate {
+  animation: tooltipSlide 0.3s ease-out;
+}
+
+/* Improved readability for long text on ultra-wide screens */
+@media (min-width: 1920px) {
+  p {
+    max-width: 85ch;
+  }
+
+  .heading-section,
+  .heading-hero {
+    max-width: 90%;
+  }
+}
+
+/* Premium glass morphism enhancement */
+.glass-effect {
+  @apply transition-all duration-300;
+  backdrop-filter: blur(12px);
+}
+
+.glass-effect:hover {
+  @apply bg-opacity-[0.08] border-opacity-20;
+}
+
+/* Scale effect for CTAs on hover */
+@keyframes ctaHoverGlow {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.25);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.4);
+  }
+}
+
+.cta-hover {
+  animation: ctaHoverGlow 2s ease-in-out infinite;
+}
+
+/* Responsive image hover effects */
+img {
+  @apply transition-transform duration-300;
+}
+
+img:hover {
+  @apply scale-105;
+}
+
+/* Better form input styling */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+  @apply transition-all duration-300 border-2;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+  @apply border-brand-blue shadow-lg;
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.2);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-brand-black;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-brand-red rounded-full transition-colors duration-300;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-brand-blue;
+}
+
+/* Mobile responsive text */
+@media (max-width: 640px) {
+  .heading-hero {
+    @apply text-3xl;
+  }
+
+  .heading-section {
+    @apply text-2xl;
+  }
+}
+

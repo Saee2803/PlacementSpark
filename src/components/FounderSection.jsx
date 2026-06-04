@@ -15,7 +15,7 @@ export default function FounderSection() {
         </div>
 
         {/* Founder Card */}
-        <div className="max-w-3xl mx-auto">
+        <div className="w-full">
           <div className="feature-card bg-gradient-to-br from-brand-card to-brand-black border-2 border-brand-blue border-opacity-30 rounded-3xl overflow-hidden hover:border-opacity-60 transition-all duration-300">
             <div className="grid md:grid-cols-2 gap-8 lg:gap-12 2xl:gap-16 p-8 lg:p-10 2xl:p-12 items-center">
               {/* Image */}
@@ -24,7 +24,7 @@ export default function FounderSection() {
                   <img
                     src="https://via.placeholder.com/300x300?text=Shashikant+Patil"
                     alt="Shashikant Patil"
-                    className="w-64 h-64 lg:w-72 lg:h-72 2xl:w-80 2xl:h-80 rounded-2xl lg:rounded-3xl object-cover border-4 border-brand-blue border-opacity-30 shadow-2xl shadow-brand-blue/30"
+                    className="w-96 h-96 lg:w-[450px] lg:h-[450px] 2xl:w-[550px] 2xl:h-[550px] rounded-2xl lg:rounded-3xl object-cover border-4 border-brand-blue border-opacity-30 shadow-2xl shadow-brand-blue/30"
                   />
                   <div className="absolute -bottom-2 -right-2 bg-brand-blue text-white px-4 lg:px-6 2xl:px-8 py-2 lg:py-3 2xl:py-4 rounded-full font-semibold text-sm lg:text-base 2xl:text-lg">
                     Co-Founder
@@ -40,34 +40,57 @@ export default function FounderSection() {
                 <p className="text-lg lg:text-xl 2xl:text-2xl text-brand-blue font-semibold mb-6 lg:mb-8 2xl:mb-10">
                   Placement Mentor & Career Coach
                 </p>
-                
+
                 <p className="text-base lg:text-lg 2xl:text-xl text-brand-white text-opacity-80 mb-6 lg:mb-8 2xl:mb-10 leading-relaxed">
-                  With years of experience in campus recruitment and professional development, Shashikant has helped 120+ students transform their career prospects. His structured mentorship program focuses on:
+                  With years of experience in campus recruitment and
+                  professional development, Shashikant has helped 120+ students
+                  transform their career prospects. His structured mentorship
+                  program focuses on:
                 </p>
 
                 <ul className="space-y-3 lg:space-y-4 2xl:space-y-5 mb-8 lg:mb-10 2xl:mb-12">
                   <li className="flex items-start gap-3">
-                    <span className="text-brand-green text-lg 2xl:text-xl mt-1">✓</span>
+                    <span className="text-brand-green text-lg 2xl:text-xl mt-1">
+                      ✓
+                    </span>
                     <span className="text-brand-white text-opacity-80 text-sm lg:text-base 2xl:text-lg">
-                      <strong className="text-brand-white">Communication Skills</strong> - Master the art of articulate expression
+                      <strong className="text-brand-white">
+                        Communication Skills
+                      </strong>{" "}
+                      - Master the art of articulate expression
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-brand-green text-lg 2xl:text-xl mt-1">✓</span>
+                    <span className="text-brand-green text-lg 2xl:text-xl mt-1">
+                      ✓
+                    </span>
                     <span className="text-brand-white text-opacity-80 text-sm lg:text-base 2xl:text-lg">
-                      <strong className="text-brand-white">Interview Confidence</strong> - Overcome anxiety and interview jitters
+                      <strong className="text-brand-white">
+                        Interview Confidence
+                      </strong>{" "}
+                      - Overcome anxiety and interview jitters
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-brand-green text-lg 2xl:text-xl mt-1">✓</span>
+                    <span className="text-brand-green text-lg 2xl:text-xl mt-1">
+                      ✓
+                    </span>
                     <span className="text-brand-white text-opacity-80 text-sm lg:text-base 2xl:text-lg">
-                      <strong className="text-brand-white">Placement Strategy</strong> - Navigate the recruitment process effectively
+                      <strong className="text-brand-white">
+                        Placement Strategy
+                      </strong>{" "}
+                      - Navigate the recruitment process effectively
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-brand-green text-lg 2xl:text-xl mt-1">✓</span>
+                    <span className="text-brand-green text-lg 2xl:text-xl mt-1">
+                      ✓
+                    </span>
                     <span className="text-brand-white text-opacity-80 text-sm lg:text-base 2xl:text-lg">
-                      <strong className="text-brand-white">Career Growth</strong> - Build a sustainable, successful career
+                      <strong className="text-brand-white">
+                        Career Growth
+                      </strong>{" "}
+                      - Build a sustainable, successful career
                     </span>
                   </li>
                 </ul>

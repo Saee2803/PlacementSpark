@@ -1,13 +1,21 @@
 
+import relianceLogo from "../assets/logos/reliance.jpeg";
+import thermaxLogo from "../assets/logos/thermax.jpeg";
+import lubrizolLogo from "../assets/logos/lubrizol.jpeg";
+import worleyLogo from "../assets/logos/worley.jpeg";
+import uplLogo from "../assets/logos/upl.jpeg";
+import aartiLogo from "../assets/logos/aarti.jpeg";
+import tatLogo from "../assets/logos/tata-chemicals.jpeg";
+
 export default function About() {
   const companies = [
-    { name: "Reliance", logo: "https://via.placeholder.com/120x50?text=Reliance" },
-    { name: "Thermax", logo: "https://via.placeholder.com/120x50?text=Thermax" },
-    { name: "Lubrizol", logo: "https://via.placeholder.com/120x50?text=Lubrizol" },
-    { name: "Worley", logo: "https://via.placeholder.com/120x50?text=Worley" },
-    { name: "UPL", logo: "https://via.placeholder.com/120x50?text=UPL" },
-    { name: "Aarti Industries", logo: "https://via.placeholder.com/120x50?text=Aarti" },
-    { name: "Tata Chemicals", logo: "https://via.placeholder.com/120x50?text=Tata" },
+    { name: "Reliance", logo: relianceLogo },
+    { name: "Thermax", logo: thermaxLogo },
+    { name: "Lubrizol", logo: lubrizolLogo },
+    { name: "Worley", logo: worleyLogo },
+    { name: "UPL", logo: uplLogo },
+    { name: "Aarti Industries", logo: aartiLogo },
+    { name: "Tata Chemicals", logo: tatLogo },
   ];
 
   const features = [

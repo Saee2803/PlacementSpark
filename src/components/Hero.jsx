@@ -2,7 +2,7 @@ import { FaBullseye, FaFire, FaRocket } from "react-icons/fa";
 import { scrollToSection } from "../utils/navigation";
 import TrustBadges from "./TrustBadges";
 import CountdownTimer from "./CountdownTimer";
-import StudentSuccessVideo from "./StudentSuccessVideo";
+import QRCodeDisplay from "./QRCodeDisplay";
 import { URLS } from "../config/urls";
 
 export default function Hero() {
@@ -152,9 +152,9 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Content - Image */}
+          {/* Right Content - QR Code */}
           <div className="relative hidden md:block">
-            <StudentSuccessVideo />
+            <QRCodeDisplay />
           </div>
         </div>
 

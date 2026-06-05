@@ -31,7 +31,6 @@ export default function Contact() {
     fullName: "",
     email: "",
     phone: "",
-    branch: "",
     currentYear: "",
     message: "",
   });
@@ -63,9 +62,7 @@ export default function Contact() {
       newErrors.phone = "Please enter a valid phone number";
     }
     
-    if (!formData.branch) {
-      newErrors.branch = "Branch is required";
-    }
+    
     
     if (!formData.currentYear) {
       newErrors.currentYear = "Current Year is required";
@@ -107,7 +104,6 @@ export default function Contact() {
         from_name: formData.fullName,
         from_email: formData.email,
         phone: formData.phone,
-        branch: formData.branch,
         current_year: formData.currentYear,
         message: formData.message,
       };
@@ -125,7 +121,6 @@ export default function Contact() {
         fullName: "",
         email: "",
         phone: "",
-        branch: "",
         currentYear: "",
         message: "",
       });
@@ -319,37 +314,7 @@ export default function Contact() {
                   )}
                 </div>
 
-                {/* Branch */}
-                <div>
-                  <label className="block text-sm lg:text-base 2xl:text-lg font-bold text-brand-white mb-2 lg:mb-3 2xl:mb-4">
-                    Branch *
-                  </label>
-                  <select
-                    name="branch"
-                    value={formData.branch}
-                    onChange={handleChange}
-                    className={`form-select w-full px-4 lg:px-5 2xl:px-6 py-3 lg:py-4 2xl:py-5 bg-brand-black border rounded-lg text-base lg:text-lg 2xl:text-xl font-medium text-brand-white focus:outline-none transition-colors ${
-                      errors.branch
-                        ? "border-red-500"
-                        : "border-brand-white border-opacity-20 focus:border-brand-blue"
-                    }`}
-                  >
-                    <option value="">Select your branch</option>
-                    <option value="Chemical">Chemical Engineering</option>
-                    <option value="Mechanical">Mechanical Engineering</option>
-                    <option value="Civil">Civil Engineering</option>
-                    <option value="Electrical">Electrical Engineering</option>
-                    <option value="Electronics">Electronics Engineering</option>
-                    <option value="IT">Information Technology</option>
-                    <option value="CSE">Computer Science</option>
-                    <option value="Other">Other</option>
-                  </select>
-                  {errors.branch && (
-                    <p className="text-red-400 text-sm lg:text-base 2xl:text-lg mt-2">
-                      {errors.branch}
-                    </p>
-                  )}
-                </div>
+                
 
                 {/* Current Year */}
                 <div>
@@ -366,12 +331,13 @@ export default function Contact() {
                         : "border-brand-white border-opacity-20 focus:border-brand-blue"
                     }`}
                   >
+        
+
                     <option value="">Select year</option>
-                    <option value="1st">1st Year</option>
-                    <option value="2nd">2nd Year</option>
-                    <option value="3rd">3rd Year</option>
-                    <option value="4th">4th Year</option>
-                    <option value="Fresher">Fresher</option>
+                    <option value="2nd Year">2nd Year</option>
+                    <option value="3rd Year">3rd Year</option>
+                    <option value="Final Year">Final Year</option>
+                    <option value="Graduate">Graduate / Fresher</option>
                   </select>
                   {errors.currentYear && (
                     <p className="text-red-400 text-sm lg:text-base 2xl:text-lg mt-2">

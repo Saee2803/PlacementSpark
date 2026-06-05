@@ -15,7 +15,7 @@ export default function Footer() {
     <footer className="bg-brand-black border-t border-brand-white border-opacity-10">
       {/* Main Footer Content */}
       <div className="container-custom py-16 md:py-20">
-        <div className="grid md:grid-cols-5 gap-6 lg:gap-8 2xl:gap-10 mb-12">
+        <div className="grid md:grid-cols-4 gap-6 lg:gap-8 2xl:gap-10 mb-12">
           {/* Brand Column */}
           <div className="animate-in">
             <img
@@ -56,8 +56,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#testimonials" className="nav-link text-sm">
-                  Testimonials
+                <a href="#successstories" className="nav-link text-sm">
+                  Success Stories
                 </a>
               </li>
               <li>
@@ -97,34 +97,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Legal */}
-          <div className="animate-in stagger-4">
-            <h4 className="text-lg font-bold text-brand-white mb-6">
-              Legal
-            </h4>
-            <ul className="space-y-3">
-              <li>
-                <a href="#" className="nav-link text-sm">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="nav-link text-sm">
-                  Terms & Conditions
-                </a>
-              </li>
-              <li>
-                <a href="#" className="nav-link text-sm">
-                  Refund Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="nav-link text-sm">
-                  Disclaimer
-                </a>
-              </li>
-            </ul>
-          </div>
+          
 
           {/* Contact Info */}
           <div className="animate-in stagger-5">
@@ -215,7 +188,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="bg-brand-card border-t border-brand-white border-opacity-5 py-4">
         <div className="container-custom text-center text-xs text-brand-white text-opacity-40">
-          Made with ❤️ by Placement Spark | Discover Reality. Explore Infinity.
+          Made with ❤️ by Placement Spark — Empowering Chemical Engineers for Industry Careers
         </div>
       </div>
     </footer>

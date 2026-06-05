@@ -1,6 +1,6 @@
 import { FaBullseye, FaFire, FaRocket } from "react-icons/fa";
 import { scrollToSection } from "../utils/navigation";
-import TrustBadges from "./TrustBadges";
+
 import CountdownTimer from "./CountdownTimer";
 import QRCodeDisplay from "./QRCodeDisplay";
 import { URLS } from "../config/urls";
@@ -27,7 +27,8 @@ export default function Hero() {
     "Placement Roadmap"
   ];
   return (
-    <section className="pt-24 pb-12 md:pb-24 lg:pt-32 2xl:pt-40 2xl:pb-32">
+    
+    <section className="pt-24 pb-32 md:pb-32 lg:pt-32 2xl:pt-40 2xl:pb-32">
       <div className="container-custom">
         <div className="grid md:grid-cols-2 gap-6 lg:gap-12 xl:gap-14 2xl:gap-16 items-center">
           {/* Left Content */}
@@ -158,8 +159,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Trust Badges Section */}
-        <TrustBadges />
+       
       </div>
     </section>
   );

@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar";
 import Pricing from "./components/Pricing";
 import ProgramOverview from "./components/ProgramOverview";
 import SuccessStories from "./components/SuccessStories";
-import WhatsAppProof from "./components/WhatsAppProof";
+
 import FAQ from "./components/FAQ";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import StickyMobileCTA from "./components/StickyMobileCTA";
@@ -17,7 +17,7 @@ import LiveActivityFeed from "./components/LiveActivityFeed";
 import ProfessionalStats from "./components/ProfessionalStats";
 import FounderSection from "./components/FounderSection";
 import CompanyJourneyTimeline from "./components/CompanyJourneyTimeline";
-import BlogSection from "./components/BlogSection";
+
 import RiskFreeBanner from "./components/RiskFreeBanner";
 
 function App() {
@@ -46,8 +46,8 @@ function App() {
         <FounderSection />
         <SuccessStories />
         <CompanyJourneyTimeline />
-        <WhatsAppProof />
-        <BlogSection />
+      
+       
         <RiskFreeBanner />
         <Pricing />
         <FAQ />

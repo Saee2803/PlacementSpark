@@ -1,7 +1,6 @@
 
 import { useState } from "react";
 import PricingModal from "./PricingModal";
-import TrustBadges from "./TrustBadges";
 import { URLS } from "../config/urls";
 
 export default function Pricing() {
@@ -103,12 +102,7 @@ export default function Pricing() {
           <p className="text-base lg:text-lg 2xl:text-xl text-brand-black text-opacity-70 max-w-3xl lg:max-w-4xl 2xl:max-w-5xl mx-auto leading-relaxed">
             Select the plan that fits your placement preparation needs. All plans include premium mentorship and lifetime access.
           </p>
-        </div>
-
-        {/* Trust Badges */}
-        <TrustBadges />
-
-        {/* Pricing Cards Grid */}
+        </div>        {/* Pricing Cards Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 2xl:gap-8 max-w-7xl lg:max-w-6xl 2xl:max-w-7xl mx-auto mt-12 lg:mt-16 2xl:mt-24">
           {plans.map((plan, index) => (
             <div

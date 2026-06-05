@@ -1,24 +1,7 @@
 import { FaPhone, FaRocket } from "react-icons/fa";
-import { useState, useEffect } from "react";
 import { URLS } from "../config/urls";
 
 export default function StickyMobileCTA() {
-  const [showCTA, setShowCTA] = useState(false);
-
-  useEffect(() => {
-    // Show sticky CTA after user scrolls down 500px
-    const handleScroll = () => {
-      if (window.scrollY > 500) {
-        setShowCTA(true);
-      } else {
-        setShowCTA(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   const handleCallClick = () => {
     window.open(URLS.PHONE_CALL);
   };
@@ -31,11 +14,8 @@ export default function StickyMobileCTA() {
     window.open(URLS.REGISTRATION_FORM, "_blank");
   };
 
-  // Only show on mobile
-  if (!showCTA) return null;
-
   return (
-    <div className="fixed bottom-0 left-0 right-0 md:hidden z-30 bg-gradient-to-r from-brand-red to-brand-red-dark text-white shadow-2xl">
+    <div className="fixed bottom-0 left-0 right-0 z-50 bg-gradient-to-r from-brand-red to-brand-red-dark text-white shadow-2xl">
       <div className="flex gap-0 h-16">
         {/* Call Now Button */}
         <button

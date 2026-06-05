@@ -16,11 +16,11 @@ export default function Navbar() {
   }, []);
 
   const navItems = [
-    "About",
-    "Program",
-    "Curriculum",
-    "Testimonials",
-    "Contact",
+    { label: "About", id: "about" },
+    { label: "Program", id: "program" },
+    { label: "Curriculum", id: "curriculum" },
+    { label: "Success Stories", id: "successstories" },
+    { label: "Contact", id: "contact" },
   ];
 
   const handleSectionClick = (sectionId) => {
@@ -31,7 +31,7 @@ export default function Navbar() {
   const handlePricingClick = () => {
     scrollToSection("pricing");
     setIsOpen(false);
-  };;
+  };
 
   return (
     <nav
@@ -43,6 +43,7 @@ export default function Navbar() {
     >
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20 lg:h-24 2xl:h-28">
+          
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <img
@@ -56,25 +57,26 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-6 lg:space-x-8 2xl:space-x-10">
             {navItems.map((item) => (
               <button
-                key={item}
-                onClick={() => handleSectionClick(item.toLowerCase())}
+                key={item.id}
+                onClick={() => handleSectionClick(item.id)}
                 className="nav-link text-xs lg:text-sm 2xl:text-base font-medium"
               >
-                {item}
+                {item.label}
               </button>
             ))}
           </div>
 
-          {/* CTA Button - Desktop */}
+          {/* Desktop CTA */}
           <div className="hidden md:flex">
-            <button 
+            <button
               onClick={handlePricingClick}
-              className="btn-primary text-xs lg:text-sm 2xl:text-base py-2 px-6 lg:py-3 lg:px-8 2xl:py-3 2xl:px-10">
+              className="btn-primary text-xs lg:text-sm 2xl:text-base py-2 px-6 lg:py-3 lg:px-8 2xl:py-3 2xl:px-10"
+            >
               Join The Program
             </button>
           </div>
 
-          {/* Mobile menu button */}
+          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -91,16 +93,18 @@ export default function Navbar() {
             <div className="flex flex-col space-y-3">
               {navItems.map((item) => (
                 <button
-                  key={item}
-                  onClick={() => handleSectionClick(item.toLowerCase())}
+                  key={item.id}
+                  onClick={() => handleSectionClick(item.id)}
                   className="nav-link text-left py-2 px-4 hover:bg-brand-card rounded-lg"
                 >
-                  {item}
+                  {item.label}
                 </button>
               ))}
-              <button 
+
+              <button
                 onClick={handlePricingClick}
-                className="btn-primary w-full text-sm">
+                className="btn-primary w-full text-sm"
+              >
                 Join The Program
               </button>
             </div>

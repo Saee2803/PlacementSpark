@@ -42,7 +42,7 @@ export default function SuccessStories() {
   ];
 
   return (
-    <section id="success-stories" className="py-20 md:py-32 lg:py-40 2xl:py-48 bg-brand-black relative overflow-hidden">
+    <section id="successstories" className="py-20 md:py-32 lg:py-40 2xl:py-48 bg-brand-black relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-r from-brand-red via-brand-black to-brand-blue opacity-10"></div>
 

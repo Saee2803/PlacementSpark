@@ -6,17 +6,17 @@ export const URLS = {
   REGISTRATION_FORM: "https://docs.google.com/forms/d/e/1FAIpQLSdCwpfXOtBNqvE1YGrOfcm_522j-3kc-eB_ocuHQeAaDutqSg/viewform",
   
   // WhatsApp
-  WHATSAPP_PHONE: "+919876543210",
-  WHATSAPP_COUNSELLING: "https://wa.me/919876543210?text=Hi%20PlacementSpark!%20I%20want%20a%20free%20counselling%20session",
-  WHATSAPP_HELP: "https://wa.me/919876543210?text=Hi%20PlacementSpark!%20I%20need%20help.",
-  WHATSAPP_GROUP: "https://wa.me/919876543210?text=Hi%20PlacementSpark!%20I%20just%20registered%20for%20the%20program.",
-  WHATSAPP_QUESTION: "https://wa.me/919876543210?text=Hi%20PlacementSpark!%20I%20have%20a%20question",
+  WHATSAPP_PHONE: "+917057606291",
+  WHATSAPP_COUNSELLING: "https://wa.me/917057606291?text=Hi%20PlacementSpark!%20I%20want%20a%20free%20counselling%20session",
+  WHATSAPP_HELP: "https://wa.me/917057606291?text=Hi%20PlacementSpark!%20I%20need%20help.",
+  WHATSAPP_GROUP: "https://wa.me/917057606291?text=Hi%20PlacementSpark!%20I%20just%20registered%20for%20the%20program.",
+  WHATSAPP_QUESTION: "https://wa.me/917057606291?text=Hi%20PlacementSpark!%20I%20have%20a%20question",
   
   // LinkedIn
   LINKEDIN_PAGE: "https://linkedin.com/company/placementspark",
   
   // Phone
-  PHONE_CALL: "tel:+919876543210",
+  PHONE_CALL: "tel:+917057606291",
 
   // Google Form with plan parameter
   getFormWithPlan: (planName) => {

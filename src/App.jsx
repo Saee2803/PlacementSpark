@@ -35,7 +35,7 @@ function App() {
   return (
     <div className="bg-brand-black text-brand-white overflow-x-hidden">
       <Navbar />
-      <main>
+      <main className="pb-14 sm:pb-16 md:pb-16 lg:pb-16 2xl:pb-18">
         <Hero />
         <LiveActivityFeed />
         <About />

@@ -69,34 +69,33 @@ export default function Footer() {
           </div>
 
           {/* Programs */}
-          <div className="animate-in stagger-3">
-            <h4 className="text-lg font-bold text-brand-white mb-6">
-              Programs
-            </h4>
-            <ul className="space-y-3">
-              <li>
-                <a href="#pricing" className="nav-link text-sm">
-                  Starter Plan
-                </a>
-              </li>
-              <li>
-                <a href="#pricing" className="nav-link text-sm">
-                  Placement Ready
-                </a>
-              </li>
-              <li>
-                <a href="#pricing" className="nav-link text-sm">
-                  Premium Mentorship
-                </a>
-              </li>
-              <li>
-                <a href="#pricing" className="nav-link text-sm">
-                  Free Trial
-                </a>
-              </li>
-            </ul>
-          </div>
-
+<div className="animate-in stagger-3">
+  <h4 className="text-lg font-bold text-brand-white mb-6">
+    Programs
+  </h4>
+  <ul className="space-y-3">
+    <li>
+      <a href="#pricing" className="nav-link text-sm">
+        Solo Plan
+      </a>
+    </li>
+    <li>
+      <a href="#pricing" className="nav-link text-sm">
+        Buddy Plan
+      </a>
+    </li>
+    <li>
+      <a href="#pricing" className="nav-link text-sm">
+        Squad Plan
+      </a>
+    </li>
+    <li>
+      <a href="#pricing" className="nav-link text-sm">
+        Free Trial
+      </a>
+    </li>
+  </ul>
+</div>
           
 
           {/* Contact Info */}

@@ -43,7 +43,7 @@ function App() {
         <ProgramOverview />
         <Curriculum />
         <HowItWorks />
-        <FounderSection />
+        {/* <FounderSection /> */}
         <SuccessStories />
         <CompanyJourneyTimeline />
       

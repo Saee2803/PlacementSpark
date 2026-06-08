@@ -1,30 +1,7 @@
 import { useState } from "react";
 import { FaEnvelope, FaLinkedin, FaPhone, FaWhatsapp } from "react-icons/fa";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
-/**
- * Contact Form Component with EmailJS Integration
- * 
- * SETUP INSTRUCTIONS:
- * 1. Visit https://www.emailjs.com
- * 2. Sign up and create an account
- * 3. Add Gmail service:
- *    - Service ID: gmail
- *    - Email: Career.placementspark@gmail.com
- * 4. Create Email Template:
- *    - Template ID: contact_form_template
- *    - Template Body:
- *      Name: {{from_name}}
- *      Email: {{from_email}}
- *      Phone: {{phone}}
- *      Branch: {{branch}}
- *      Year: {{current_year}}
- *      Message:
- *      {{message}}
- * 5. Get your Public Key from EmailJS dashboard
- * 6. Replace 'YOUR_EMAILJS_PUBLIC_KEY' below with your actual key
- * 7. Test the form to verify email delivery
- */
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -41,7 +18,7 @@ export default function Contact() {
   const [errors, setErrors] = useState({});
 
   // Initialize EmailJS
-  emailjs.init("YOUR_EMAILJS_PUBLIC_KEY");
+  emailjs.init("3lvAOd4KhWN7tuhUi");
 
   const validateForm = () => {
     const newErrors = {};
@@ -109,10 +86,12 @@ export default function Contact() {
       };
 
       // Send email using EmailJS
+      
+      
       await emailjs.send(
-        "YOUR_EMAILJS_SERVICE_ID",
-        "YOUR_EMAILJS_TEMPLATE_ID",
-        emailParams
+          "service_kdejr4o",
+          "template_9shombj",
+          emailParams
       );
 
       // Success state

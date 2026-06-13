@@ -49,10 +49,10 @@ export default function FreeTrialWeek() {
         {/* Header */}
         <div className="text-center mb-16 animate-in">
           <h2 className="heading-section text-brand-black mb-4">
-            Your First 7 Days — Free
+            What You Get in Your First 7 Days
           </h2>
           <p className="text-lg text-brand-black text-opacity-70">
-            Experience the complete Placement Spark program at zero cost
+            With our 7-Day Risk-Free Guarantee, experience the complete Placement Spark program with full access and support
           </p>
         </div>
 
@@ -124,12 +124,12 @@ export default function FreeTrialWeek() {
         {/* CTA */}
         <div className="text-center mt-16 animate-in">
           <p className="text-lg text-brand-black text-opacity-70 mb-6">
-            No credit card required. Free access. Genuine learning.
+            Enroll today and get 7 days of full access. Not satisfied? Get a complete refund.
           </p>
           <button 
             onClick={() => scrollToSection("pricing")}
             className="btn-primary">
-            Start Your Free 7-Day Trial
+            Join Risk-Free Today
           </button>
         </div>
       </div>

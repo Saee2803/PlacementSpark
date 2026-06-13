@@ -125,33 +125,7 @@ export default function Pricing() {
     },
   ];
 
-  const freePlan = {
-    id: "trial",
-    name: "Free Trial",
-    price: "₹0",
-    savings: null,
-    tagline: "Experience Placement Spark before enrolling",
-    description: "Risk-Free Program Exploration",
-    badge: "Try First",
-    displayFeatures: [
-      "Orientation Session",
-      "Placement Assessment",
-      "Resume Workshop",
-      "Roadmap Discussion",
-      "Mentor Introduction",
-    ],
-    allFeatures: [
-      "Orientation Session",
-      "Placement Readiness Assessment",
-      "Resume Workshop",
-      "Placement Roadmap Discussion",
-      "Mentor Introduction Session",
-      "Program Overview",
-    ],
-    cta: "Start Free Trial",
-    ctaStyle: "btn-outline",
-    theme: "green",
-  };
+  // Free Trial removed - replaced with 7-Day Risk-Free Guarantee
 
   const whyJoinPoints = [
     "Learn together and stay accountable",
@@ -178,8 +152,39 @@ export default function Pricing() {
           </p>
         </div>
 
-        {/* Paid Plans Grid with Free Trial */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-4 lg:gap-6 2xl:gap-8 max-w-7xl mx-auto mb-16 md:mb-20 lg:mb-24 2xl:mb-32 px-4 sm:px-0">
+        {/* Risk-Free Guarantee Banner */}
+        <div className="mb-16 md:mb-20 lg:mb-24 2xl:mb-32 px-4 sm:px-0">
+          <div className="max-w-5xl mx-auto bg-gradient-to-r from-brand-green/20 via-brand-green/10 to-brand-blue/20 border-2 border-brand-green rounded-2xl md:rounded-3xl p-8 md:p-10 lg:p-12 2xl:p-14">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8 lg:gap-10">
+              {/* Icon */}
+              <div className="flex-shrink-0">
+                <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-gradient-to-br from-brand-green to-brand-blue rounded-full flex items-center justify-center shadow-lg shadow-brand-green/40">
+                  <span className="text-2xl md:text-3xl lg:text-4xl">🛡️</span>
+                </div>
+              </div>
+              {/* Content */}
+              <div className="flex-1 text-center md:text-left">
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 md:mb-4 lg:mb-5">7-Day Risk-Free Guarantee</h3>
+                <p className="text-base md:text-lg lg:text-xl text-gray-200 mb-4 md:mb-5 lg:mb-6 leading-relaxed">
+                  Enroll today with confidence. Get full access to mentorship, mock interviews, roadmap sessions and placement preparation.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 md:gap-6 text-sm md:text-base lg:text-lg font-semibold text-gray-300">
+                  <div className="flex items-center gap-2 justify-center md:justify-start">
+                    <span className="text-green-400 text-lg">💰</span>
+                    <span>100% Money Back</span>
+                  </div>
+                  <div className="flex items-center gap-2 justify-center md:justify-start">
+                    <span className="text-green-400 text-lg">⏱</span>
+                    <span>Refund within 3-5 business days</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Paid Plans Grid - Now 3 Plans */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-4 lg:gap-6 2xl:gap-8 max-w-6xl mx-auto mb-16 md:mb-20 lg:mb-24 2xl:mb-32 px-4 sm:px-0">
           {paidPlans.map((plan) => (
             <div
               key={plan.id}
@@ -273,78 +278,7 @@ export default function Pricing() {
               </button>
             </div>
           ))}
-
-          {/* Free Trial in Grid */}
-          <div className="relative feature-card bg-gradient-to-br from-brand-card to-brand-black border-2 border-brand-green/30 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-6 lg:p-8 2xl:p-10 hover:border-brand-green/60 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 animate-in">
-            {/* Badge */}
-            {freePlan.badge && (
-              <div className="absolute -top-3 sm:-top-4 left-1/2 transform -translate-x-1/2">
-                <div className="bg-gradient-to-r from-brand-green to-brand-blue text-white px-3 sm:px-4 md:px-5 lg:px-6 2xl:px-8 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm md:text-xs lg:text-sm 2xl:text-base font-bold shadow-lg flex items-center gap-1.5">
-                  <FaStar size={14} className="md:w-3 md:h-3" />
-                  {freePlan.badge}
-                </div>
-              </div>
-            )}
-
-            {/* Plan Name */}
-            <h3 className="text-xl sm:text-2xl md:text-xl lg:text-2xl 2xl:text-3xl font-bold text-brand-white mb-2 md:mb-2 lg:mb-3">
-              {freePlan.name}
-            </h3>
-
-            {/* Tagline */}
-            <p className="text-xs sm:text-sm md:text-xs lg:text-sm 2xl:text-base text-brand-green font-semibold mb-3 md:mb-3 lg:mb-4">
-              {freePlan.tagline}
-            </p>
-
-            {/* Description */}
-            <p className="text-xs sm:text-sm md:text-xs lg:text-sm 2xl:text-base text-brand-white/70 leading-relaxed mb-4 md:mb-4 lg:mb-5">
-              {freePlan.description}
-            </p>
-
-            {/* Price */}
-            <div className="mb-6 md:mb-5 lg:mb-6 2xl:mb-8">
-              <div className="text-4xl sm:text-5xl md:text-4xl lg:text-5xl 2xl:text-6xl font-bold text-brand-green">
-                {freePlan.price}
-              </div>
-            </div>
-
-            {/* Features List */}
-            <div className="space-y-2 md:space-y-1.5 lg:space-y-2 2xl:space-y-3 mb-4 md:mb-3 lg:mb-5 flex-grow">
-              {freePlan.displayFeatures.map((feature, fIndex) => (
-                <div key={fIndex} className="flex items-start gap-2 md:gap-1.5 lg:gap-2">
-                  <span className="text-brand-green font-bold mt-0.5 text-sm md:text-xs lg:text-sm 2xl:text-base flex-shrink-0">
-                    ✓
-                  </span>
-                  <span className="text-brand-white/80 text-xs sm:text-sm md:text-xs lg:text-sm 2xl:text-base leading-snug">
-                    {feature}
-                  </span>
-                </div>
-              ))}
-            </div>
-
-            {/* +N More Button */}
-            {freePlan.allFeatures.length > freePlan.displayFeatures.length && (
-              <button
-                onClick={() => handleEnroll(freePlan)}
-                className="text-xs sm:text-sm md:text-xs lg:text-sm 2xl:text-base text-brand-green font-semibold hover:text-brand-green/80 transition-colors mb-4 md:mb-3 lg:mb-5"
-              >
-                +{freePlan.allFeatures.length - freePlan.displayFeatures.length} More Benefits →
-              </button>
-            )}
-
-            {/* CTA Button */}
-            <button
-              onClick={() => handleEnroll(freePlan)}
-              className={`${freePlan.ctaStyle} w-full text-center py-3 sm:py-4 md:py-3 lg:py-4 2xl:py-5 font-semibold text-xs sm:text-sm md:text-xs lg:text-sm 2xl:text-base rounded-lg md:rounded-lg lg:rounded-xl 2xl:rounded-2xl transition-all duration-300 hover:shadow-lg`}
-            >
-              {freePlan.cta}
-            </button>
-          </div>
-
-          {/* Old Free Trial Section - Now in grid above */}
         </div>
-
-        {/* Old Free Trial Section - REMOVED - Now in main grid above */}
 
         {/* Why Join With Friends Section */}
         <div className="max-w-4xl mx-auto mb-16 md:mb-20 lg:mb-24 2xl:mb-32 px-4 sm:px-0">

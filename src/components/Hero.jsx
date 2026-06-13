@@ -21,7 +21,7 @@ export default function Hero() {
 
   const uspPoints = [
     "Mock Interviews",
-    "Communication Training",
+    "Placement Mentorship",
     "Chemical Engineering Focus",
     "Personal Mentorship",
     "Placement Roadmap"
@@ -136,13 +136,29 @@ export default function Hero() {
               <button 
                 onClick={handleJourneyClick}
                 className="btn-primary-cta text-sm lg:text-base 2xl:text-lg py-2.5 px-6 lg:py-3 lg:px-8 2xl:py-4 2xl:px-10">
-                Start My Journey
+                Join Risk-Free Today
               </button>
               <button 
                 onClick={handleCounsellingClick}
                 className="btn-outline text-sm lg:text-base 2xl:text-lg py-2.5 px-6 lg:py-3 lg:px-8 2xl:py-4 2xl:px-10">
                 Free Counselling Call
               </button>
+            </div>
+
+            {/* Trust Badges */}
+            <div className="flex flex-col gap-2 mb-10 lg:mb-12 2xl:mb-14">
+              <div className="flex items-center gap-2 text-xs lg:text-sm 2xl:text-base text-brand-white text-opacity-80">
+                <span className="text-brand-green">🛡️</span>
+                <span>7-Day Risk-Free Guarantee</span>
+              </div>
+              <div className="flex items-center gap-2 text-xs lg:text-sm 2xl:text-base text-brand-white text-opacity-80">
+                <span className="text-brand-green">💰</span>
+                <span>100% Refund Available</span>
+              </div>
+              <div className="flex items-center gap-2 text-xs lg:text-sm 2xl:text-base text-brand-white text-opacity-80">
+                <span className="text-brand-green">⚡</span>
+                <span>Refund Processed Within 3-5 Business Days</span>
+              </div>
             </div>
 
             {/* Quote Card */}

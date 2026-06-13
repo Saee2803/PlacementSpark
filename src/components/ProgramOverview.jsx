@@ -59,10 +59,7 @@ export default function ProgramOverview() {
                     <span className="text-brand-yellow font-bold mr-4">✓</span>
                     <span>Personalized feedback and improvement roadmap</span>
                   </li>
-                  <li className="flex items-start text-lg">
-                    <span className="text-brand-yellow font-bold mr-4">✓</span>
-                    <span>Lifetime access to resources and recordings</span>
-                  </li>
+                 
                 </ul>
               </div>
 
@@ -71,7 +68,7 @@ export default function ProgramOverview() {
                   Program Duration
                 </h3>
                 <p className="text-lg text-brand-white text-opacity-80">
-                  <strong>5 Weeks of Intensive Training</strong> with flexible
+                  <strong>3 months of Intensive Training</strong> with flexible
                   scheduling to fit around your college and preparation
                   schedule.
                 </p>

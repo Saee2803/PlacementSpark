@@ -91,7 +91,7 @@ export default function Footer() {
     </li>
     <li>
       <a href="#pricing" className="nav-link text-sm">
-        Free Trial
+        7-Day Guarantee
       </a>
     </li>
   </ul>

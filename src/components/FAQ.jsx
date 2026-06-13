@@ -19,27 +19,27 @@ export default function FAQ() {
     {
       question: "What is the duration of the program?",
       answer:
-        "The Foundation Plan is 5 weeks of intensive training. The Free Trial is 7 days. You can also extend or take custom batches based on your needs.",
+        "The Foundation Plan is 3 months of intensive training. You can also extend or take custom batches based on your needs.",
     },
     {
-      question: "Is the 7-day free trial really free?",
+      question: "What if I don't like the program?",
       answer:
-        "Yes! Our 7-day free trial is completely free with zero hidden charges. No credit card required. You get full access to all core modules, sessions, and one mock interview.",
+        "Every enrollment comes with a 7-Day Risk-Free Guarantee. If you feel the program is not suitable for you within the first 7 days, simply contact our team and request a refund. Your refund will be processed within 3-5 business working days. No questions asked.",
     },
     {
       question: "Will I get mock interviews?",
       answer:
-        "Absolutely! Every plan includes mock interviews. The Free Trial includes 1 mock HR interview. Foundation Plan includes 3 mock interviews (HR + Technical). All feedback is personalized.",
+        "Absolutely! Every paid plan includes mock interviews. The Solo, Buddy, and Squad plans all include multiple mock interviews (HR + Technical). All feedback is personalized and tailored to your needs.",
     },
     {
-      question: "What if I don't see results in 7 days?",
+      question: "How does the 7-Day Money Back Guarantee work?",
       answer:
-        "We guarantee measurable improvement in 7 days or we'll guide you personally at no extra cost. If you're not satisfied within 3 days, get a full refund, no questions asked.",
+        "After you enroll and pay the program fee, you get full access to all mentorship, mock interviews, roadmap sessions and placement preparation. If you're not satisfied within 7 days, request a refund and we'll process it within 3-5 business days. It's that simple.",
     },
     {
-      question: "Can I get a refund?",
+      question: "Do I need a credit card to access the program?",
       answer:
-        "Yes! We offer a 3-day money-back guarantee. If you're not satisfied, request a refund anytime within 3 days of enrollment.",
+        "Yes, you'll need to pay the program fee to enroll. We accept all major credit cards, debit cards, and UPI payments. Your payment is secure and protected.",
     },
     {
       question: "How many batches run per month?",

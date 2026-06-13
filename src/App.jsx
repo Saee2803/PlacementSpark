@@ -13,7 +13,7 @@ import SuccessStories from "./components/SuccessStories";
 import FAQ from "./components/FAQ";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import StickyMobileCTA from "./components/StickyMobileCTA";
-import LiveActivityFeed from "./components/LiveActivityFeed";
+// import LiveActivityFeed from "./components/LiveActivityFeed"; // Disabled Until Real Data Integration
 import ProfessionalStats from "./components/ProfessionalStats";
 import FounderSection from "./components/FounderSection";
 import CompanyJourneyTimeline from "./components/CompanyJourneyTimeline";
@@ -37,7 +37,7 @@ function App() {
       <Navbar />
       <main className="pb-14 sm:pb-16 md:pb-16 lg:pb-16 2xl:pb-18">
         <Hero />
-        <LiveActivityFeed />
+        {/* <LiveActivityFeed /> - Disabled Until Real Data Integration */}
         <About />
         <ProfessionalStats />
         <ProgramOverview />

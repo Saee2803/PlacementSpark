@@ -11,7 +11,7 @@ export default function CountdownTimer() {
   useEffect(() => {
     const calculateTimeLeft = () => {
       // Set next batch date (adjust as needed)
-      const nextBatchDate = new Date("2026-06-10").getTime();
+      const nextBatchDate = new Date("2026-06-22T10:00:00+05:30").getTime();
       const now = new Date().getTime();
       const difference = nextBatchDate - now;
 

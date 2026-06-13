@@ -97,7 +97,7 @@ export default function ProfessionalStats() {
             suffix="%"
           />
           <AnimatedCounter
-            targetValue={15}
+            targetValue={9}
             label="Highest Package"
             icon={<FaRupeeSign />}
             suffix=" LPA"

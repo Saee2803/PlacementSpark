@@ -15,14 +15,14 @@ export default function WhatsAppProof() {
     {
       id: 2,
       name: "Priya J.",
-      text: "The communication training is what got me through. Thanks! ✨",
+      text: "The Placement Mentorship is what got me through. Thanks! ✨",
       image: "https://via.placeholder.com/80x80?text=Priya",
       date: "1 week ago"
     },
     {
       id: 3,
       name: "Rohit P.",
-      text: "15 LPA offer from Reliance! Never thought it was possible 🚀",
+      text: "9 LPA offer from Reliance! Never thought it was possible 🚀",
       image: "https://via.placeholder.com/80x80?text=Rohit",
       date: "3 days ago"
     },

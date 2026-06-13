@@ -62,7 +62,7 @@ export default function About() {
               Most engineering students step into placement season unsure of
               what to expect. They have the skills, but lack a roadmap.
               Placement Spark changes that — through mock interviews,
-              communication training, resume building, and mentorship, we
+              Placement Mentorship, resume building, and mentorship, we
               prepare students to show up confident and ready.
             </p>
 

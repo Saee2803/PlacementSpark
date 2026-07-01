@@ -164,7 +164,7 @@ export default function Pricing() {
               </div>
               {/* Content */}
               <div className="flex-1 text-center md:text-left">
-                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 md:mb-4 lg:mb-5">7-Day Risk-Free Guarantee</h3>
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-3 md:mb-4 lg:mb-5">7-Day Risk-Free Guarantee</h3>
                 <p className="text-base md:text-lg lg:text-xl text-gray-200 mb-4 md:mb-5 lg:mb-6 leading-relaxed">
                   Enroll today with confidence. Get full access to mentorship, mock interviews, roadmap sessions and placement preparation.
                 </p>

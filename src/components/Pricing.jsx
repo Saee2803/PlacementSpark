@@ -153,36 +153,43 @@ export default function Pricing() {
         </div>
 
         {/* Risk-Free Guarantee Banner */}
-        <div className="mb-16 md:mb-20 lg:mb-24 2xl:mb-32 px-4 sm:px-0">
-          <div className="max-w-5xl mx-auto bg-gradient-to-r from-brand-green/20 via-brand-green/10 to-brand-blue/20 border-2 border-brand-green rounded-2xl md:rounded-3xl p-8 md:p-10 lg:p-12 2xl:p-14">
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8 lg:gap-10">
-              {/* Icon */}
-              <div className="flex-shrink-0">
-                <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-gradient-to-br from-brand-green to-brand-blue rounded-full flex items-center justify-center shadow-lg shadow-brand-green/40">
-                  <span className="text-2xl md:text-3xl lg:text-4xl">🛡️</span>
-                </div>
-              </div>
-              {/* Content */}
-              <div className="flex-1 text-center md:text-left">
-                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-3 md:mb-4 lg:mb-5">7-Day Risk-Free Guarantee</h3>
-                <p className="text-base md:text-lg lg:text-xl text-gray-200 mb-4 md:mb-5 lg:mb-6 leading-relaxed">
-                  Enroll today with confidence. Get full access to mentorship, mock interviews, roadmap sessions and placement preparation.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 md:gap-6 text-sm md:text-base lg:text-lg font-semibold text-gray-300">
-                  <div className="flex items-center gap-2 justify-center md:justify-start">
-                    <span className="text-green-400 text-lg">💰</span>
-                    <span>100% Money Back</span>
-                  </div>
-                  <div className="flex items-center gap-2 justify-center md:justify-start">
-                    <span className="text-green-400 text-lg">⏱</span>
-                    <span>Refund within 3-5 business days</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+<div className="mb-16 md:mb-20 lg:mb-24 2xl:mb-32 px-4 sm:px-0">
+  <div className="max-w-5xl mx-auto bg-gradient-to-r from-green-50 via-white to-blue-50 border-2 border-brand-green rounded-2xl md:rounded-3xl p-8 md:p-10 lg:p-12 2xl:p-14 shadow-xl">
+    <div className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8 lg:gap-10">
+      
+      {/* Icon */}
+      <div className="flex-shrink-0">
+        <div className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-gradient-to-br from-brand-green to-brand-blue rounded-full flex items-center justify-center shadow-lg shadow-brand-green/40">
+          <span className="text-2xl md:text-3xl lg:text-4xl">🛡️</span>
+        </div>
+      </div>
+
+      {/* Content */}
+      <div className="flex-1 text-center md:text-left">
+        <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 md:mb-4 lg:mb-5">
+          7-Day Risk-Free Guarantee
+        </h3>
+
+        <p className="text-base md:text-lg lg:text-xl text-gray-700 mb-4 md:mb-5 lg:mb-6 leading-relaxed">
+          Enroll today with confidence. Get full access to mentorship, mock
+          interviews, roadmap sessions and placement preparation.
+        </p>
+
+        <div className="flex flex-col sm:flex-row gap-4 md:gap-6 text-sm md:text-base lg:text-lg font-semibold text-gray-700">
+          <div className="flex items-center gap-2 justify-center md:justify-start">
+            <span className="text-green-600 text-lg">💰</span>
+            <span>100% Money Back</span>
+          </div>
+
+          <div className="flex items-center gap-2 justify-center md:justify-start">
+            <span className="text-green-600 text-lg">⏱</span>
+            <span>Refund within 3–5 business days</span>
           </div>
         </div>
-
+      </div>
+    </div>
+  </div>
+</div>
         {/* Paid Plans Grid - Now 3 Plans */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-4 lg:gap-6 2xl:gap-8 max-w-6xl mx-auto mb-16 md:mb-20 lg:mb-24 2xl:mb-32 px-4 sm:px-0">
           {paidPlans.map((plan) => (

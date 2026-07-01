@@ -44,7 +44,7 @@ src/
   - 120+ Students Nurtured ⭐
   - 27+ Success Stories 🏆
   - 95% Interview Success Rate ✓
-  - 9 LPA Highest Package 💰
+  - 15 LPA Highest Package 💰
 - Triggered on scroll (Intersection Observer)
 - 2-second animation duration
 - Gradient text effects

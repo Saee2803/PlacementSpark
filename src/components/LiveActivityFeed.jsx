@@ -6,7 +6,7 @@ const activities = [
   "🔥 Rohit got selected at Reliance",
   "🔥 Sneha completed mock interviews",
   "🔥 Vikram cleared technical round",
-  "🔥 Neha got 9 LPA offer",
+  "🔥 Neha got 15 LPA offer",
 ];
 
 export default function LiveActivityFeed() {

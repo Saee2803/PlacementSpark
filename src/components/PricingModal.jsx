@@ -88,10 +88,7 @@ export default function PricingModal({ isOpen, plan, onClose }) {
             Enroll Now
           </button>
 
-          {/* Money Back Guarantee */}
-          <p className="text-center text-xs lg:text-sm text-brand-white/60 border-t border-brand-red/20 pt-4">
-            ✅ <span className="text-brand-green font-semibold">Money-back guarantee:</span> Not satisfied in first 3 days? Full refund, no questions asked.
-          </p>
+          
         </div>
       </div>
     </div>

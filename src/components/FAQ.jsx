@@ -44,7 +44,7 @@ export default function FAQ() {
     {
       question: "How many batches run per month?",
       answer:
-        "We run new batches every 2 weeks. You can join the next batch immediately or wait for your preferred schedule.",
+        "A new PlacementSpark batch starts every 2 months, giving students regular opportunities to join the program.",
     },
   ];
 

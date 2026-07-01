@@ -22,7 +22,7 @@ export default function WhatsAppProof() {
     {
       id: 3,
       name: "Rohit P.",
-      text: "9 LPA offer from Reliance! Never thought it was possible 🚀",
+      text: "15 LPA offer from Reliance! Never thought it was possible 🚀",
       image: "https://via.placeholder.com/80x80?text=Rohit",
       date: "3 days ago"
     },

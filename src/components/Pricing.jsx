@@ -329,16 +329,7 @@ export default function Pricing() {
           </div>
         </div>
 
-        {/* Additional Info */}
-        <div className="text-center animate-in px-4 sm:px-0">
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-2xl text-brand-black/80 mb-3 sm:mb-4 md:mb-5 lg:mb-6 2xl:mb-8 font-semibold">
-            <span className="text-brand-red">✓ Money-back guarantee:</span> Not
-            satisfied in first 3 days? Full refund, no questions asked.
-          </p>
-          <p className="text-xs sm:text-sm md:text-base lg:text-lg 2xl:text-xl text-brand-black/70">
-            Choose the plan that works for you. Upgrade or switch anytime.
-          </p>
-        </div>
+        
       </div>
 
       {/* Pricing Modal */}

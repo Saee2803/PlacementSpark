@@ -24,7 +24,7 @@ Success Stories Section
 │  ├─ 120+ Students Nurtured
 │  ├─ 27+ Success Stories  
 │  ├─ 95% Interview Success Rate
-│  └─ 9 LPA Highest Package
+│  └─ 15 LPA Highest Package
 │
 ├─ Filter Buttons
 │  ├─ All Companies
@@ -68,7 +68,7 @@ The section comes pre-loaded with 8 placement stories:
 
 1. **Aditya Sharma** - Lubrizol, Process Engineer, 12 LPA
 2. **Priya Joshi** - Thermax, Production Engineer, 10.5 LPA
-3. **Rohit Patil** - Reliance, Senior Process Engineer, 9 LPA ⭐ (Highest)
+3. **Rohit Patil** - Reliance, Senior Process Engineer, 15 LPA ⭐ (Highest)
 4. **Sneha Desai** - Worley, Design Engineer, 11 LPA
 5. **Vikram Singh** - TCS, Systems Engineer, 8 LPA
 6. **Ananya Gupta** - NTPC, Graduate Engineer Trainee, 9.5 LPA

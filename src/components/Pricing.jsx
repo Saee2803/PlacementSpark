@@ -170,12 +170,12 @@ export default function Pricing() {
           7-Day Risk-Free Guarantee
         </h3>
 
-        <p className="text-base md:text-lg lg:text-xl text-gray-700 mb-4 md:mb-5 lg:mb-6 leading-relaxed">
+        <p className="text-base md:text-lg lg:text-xl !text-black mb-4 md:mb-5 lg:mb-6 leading-relaxed">
           Enroll today with confidence. Get full access to mentorship, mock
           interviews, roadmap sessions and placement preparation.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 md:gap-6 text-sm md:text-base lg:text-lg font-semibold text-gray-700">
+        <div className="flex flex-col sm:flex-row gap-4 md:gap-6 text-sm md:text-base lg:text-lg font-semibold !text-black">
           <div className="flex items-center gap-2 justify-center md:justify-start">
             <span className="text-green-600 text-lg">💰</span>
             <span>100% Money Back</span>
